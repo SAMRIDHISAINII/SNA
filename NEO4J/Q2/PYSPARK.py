@@ -22,7 +22,7 @@ actor_type_indexer = StringIndexer(inputCol="ActorType", outputCol="ActorTypeInd
 affiliation_to_indexer = StringIndexer(inputCol="AffiliationTo", outputCol="AffiliationToIndex")
 affiliation_start_date_indexer = StringIndexer(inputCol="AffiliationStartDate", outputCol="AffiliationStartDateIndex")
 affiliation_end_date_indexer = StringIndexer(inputCol="AffiliationEndDate", outputCol="AffiliationEndDateIndex")
-aliases_indexer = StringIndexer(inputCol="Aliases", outputCol="AliasesIndex")
+aliases_indexer = StringIndexer(inputCol="Aliases", outputCol="AliasesIndex") 
 
 # fit the StringIndexer models to the data
 actor_name_indexer_model = actor_name_indexer.fit(data)
